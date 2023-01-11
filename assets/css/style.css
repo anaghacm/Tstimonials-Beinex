@@ -1,0 +1,362 @@
+/* font-family: 'Poppins', sans-serif; */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header starts */
+
+.navbar {
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navlink {
+    float: right;
+    text-decoration: none;
+    color: #10385c;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 150px;
+    height: 29px;
+}
+
+/* Header ends */
+
+/* Section starts */
+
+section {
+    padding-top: 30px;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #10385c;
+    color: white;
+}
+
+.secrow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.textdiv {
+    width: 35%;
+    color: #10385c;
+    padding: 80px 0px 80px 80px;
+    background-repeat: no-repeat;
+    background-position: 10% 20%;
+    background-size: 20%;
+}
+
+.textdiv h3 {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.textdiv p {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.viddiv {
+    width: 35%;
+    height: 250px;
+}
+
+video {
+    float: right;
+    margin-top: 5%;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.comdiv {
+    width: 25%;
+    margin: 18px;
+    height: auto;
+    border: 2px solid rgba(16, 56, 92, 0.2);
+    color: #10385c;
+    padding: 50px 30px 30px 30px;
+    position: relative;
+}
+
+.circlediv {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* background-color: #1fd4f6; */
+    background-image: url('../images/quote.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -35px;
+    left: 20px;
+}
+
+.comdiv h3 {
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.comdiv p {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.comdiv h4 {
+    padding-top: 20px;
+    color: black;
+}
+
+.des {
+    color: black;
+    opacity: 1;
+}
+
+.lastrow {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.demodiv {
+    width: 60%;
+}
+
+h2 {
+    color: #10385c;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.demodiv form {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.demodiv div {
+    position: relative;
+}
+
+.demodiv .lefticon {
+    position: absolute;
+    left: 41%;
+    top: 8px;
+    color: #1fd4f6;
+    font-size: 20px;
+}
+
+.righticon {
+    position: absolute;
+    left: 89%;
+    top: 8px;
+    color: #1fd4f6;
+    font-size: 20px;
+}
+
+button {
+    background-color: #10385c;
+    color: white;
+    padding: 10px 30px 10px 30px;
+}
+
+.demodiv input {
+    border: 2px solid rgba(16, 56, 92, 0.2);
+    width: 45%;
+    padding: 5px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.demodiv textarea {
+    border: 2px solid rgba(16, 56, 92, 0.2);
+    width: 93%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.nextdiv {
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid rgba(16, 56, 92, 0.3);
+    padding-left: 35px;
+    padding-right: 10px;
+
+}
+
+.nextdiv p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* section ends */
+
+/* Footer starts */
+
+.linksdiv {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    background-color: #032d66;
+}
+
+.linksdiv div {
+    text-align: left;
+    padding-right: 30px;
+
+}
+
+.borderdiv {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 30px;
+    /* margin-top: -10px; */
+}
+
+.linksdiv p {
+    font-size: 16px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.linksdiv a {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footerbase {
+    font-size: 13px;
+    font-weight: 300;
+    background-color: #150d2b;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.baselinks a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 0px 30px 0px 30px;
+}
+
+.blink {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.smlinks {
+    padding: 20px;
+}
+
+.smlinks a {
+    font-size: 14px;
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Footer ends */
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+    .navbar{
+        padding: 0;
+    }
+    .navlink{
+        float: none;
+        margin-left: 10px;
+    }
+    section{
+        padding-top: 0;
+    }
+    .secrow {
+        display: block;
+    }
+
+    .textdiv {
+        width: 100%;
+    }
+
+    .viddiv {
+        width: 90%;
+        margin: auto;
+
+    }
+
+    video {
+        float: left;
+        margin-top: 0%;
+    }
+
+    .comments {
+        display: block;
+    }
+
+    .comdiv {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .lastrow {
+        display: block;
+    }
+
+    .demodiv {
+        width: 95%;
+        margin: auto;
+    }
+
+    .demodiv .lefticon {
+        left: 39%;
+    }
+
+    .demodiv textarea {
+        width: 95%;
+    }
+
+    .nextdiv {
+        width: 100%;
+    }
+
+    .linksdiv {
+        display: block;
+    }
+
+    .linksdiv div {
+        width: 40%;
+        margin: auto;
+    }
+}
