@@ -22,15 +22,19 @@
     <!-- Header starts -->
     <header>
         <div class="navbar">
-            <a class="logo" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
-            <a class="navlink" href="#" title="Training">Training</a>
-            <a class="navlink" href="#" title="Blog">Blog</a>
-            <a class="navlink" href="#" title="Careers">Careers</a>
-            <a class="navlink" href="#" title="Events">Events</a>
-            <a class="navlink" href="#" title="Company">Company</a>
-            <a class="navlink" href="#" title="Industries">Industries</a>
-            <a class="navlink" href="#" title="Partners">Partners</a>
-            <a class="navlink" href="#" title="Services">Services</a>
+            <div>
+                <a class="logo" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+            </div>
+            <div>
+                <a class="navlink" href="#" title="Services">Services</a>
+                <a class="navlink" href="#" title="Partners">Partners</a>
+                <a class="navlink" href="#" title="Industries">Industries</a>
+                <a class="navlink" href="#" title="Company">Company</a>
+                <a class="navlink" href="#" title="Events">Events</a>
+                <a class="navlink" href="#" title="Careers">Careers</a>
+                <a class="navlink" href="#" title="Blog">Blog</a>
+                <a class="navlink" href="#" title="Training">Training</a>
+            </div>
         </div>
     </header>
     <!-- Header ends -->
@@ -43,15 +47,15 @@
 
         <div class="secrow">
             <div class="textdiv"
-                style="background-image:linear-gradient(rgba(255,255,255, 0.95),rgba(255,255,255, 0.95)),url('./assets/images/quotebg.png');">
+                style="background-image:linear-gradient(rgba(255,255,255, 0.9),rgba(255,255,255, 0.9)),url('./assets/images/quotebg.png');">
                 <h3>What Are Our Client Saying</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     diam nonummy nibh euismod tincidunt ut laoreet dolore
                     magna aliquam erat volutpat.</p>
             </div>
             <div class="viddiv">
-                <video width="430" height="240" controls>
-                    <source src="./assets/videos/Bienex.mp4" type="video/mp4">
+                <video controls>
+                    <source src="./assets/videos/Beinex.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -133,24 +137,30 @@
             <div class="demodiv">
                 <h2>Request A Demo</h2>
                 <form action="">
-                    <div>
-                        <input type="text" placeholder="Name"><i class="fa-regular fa-user lefticon"></i>
-                        <input type="text" placeholder="Email"><i class="fa-regular fa-envelope righticon"></i>
+                    <div class="name">
+                        <input type="text" placeholder="Name">
                     </div>
-                    <div>
-                        <input type="text" placeholder="Select Country"><i
-                            class="fa-solid fa-earth-europe lefticon"></i>
-                        <input type="text" placeholder="Phone number"><i class="fa-solid fa-phone righticon"></i>
+                    <div class="email">
+                        <input type="text" placeholder="Email">
                     </div>
-                    <div>
-                        <input type="text" placeholder="Company"><i class="fa-solid fa-building lefticon"></i>
-                        <input type="text" placeholder="Job role"><i class="fa-solid fa-user-tie righticon"></i>
+                    <div class="country">
+                        <input type="text" placeholder="Select Country">
                     </div>
-                    <div>
-                        <textarea name="" id="" cols="30" rows="3" placeholder="Message"></textarea><i
-                            class="fa-regular fa-comment righticon"></i>
+                    <div class="phone">
+                        <input type="text" placeholder="Phone number">
                     </div>
-                    <button type="button">Submit <i class="fa-regular fa-circle-right"></i></button>
+                    <div class="company">
+                        <input type="text" placeholder="Company">
+                    </div>
+                    <div class="job">
+                        <input type="text" placeholder="Job role">
+                    </div>
+                    <div class="textareadiv">
+                        <textarea name="" id="" cols="30" rows="3" placeholder="Message"></textarea>
+                    </div>
+                    <div class="textareadiv subbut">
+                        <button type="button">Submit <i class="fa-regular fa-circle-right"></i></button>
+                    </div>
                 </form>
             </div>
             <div class="nextdiv">
@@ -168,60 +178,69 @@
             <div>
                 <a href="./index.html"><img src="./assets/images/whitelogo.jpg" width="120px" height="29px"
                         alt="logo"></a>
-                <br> <a href="#" title="Training">About Beinex</a>
-                <br> <a href="#" title="Blog">Careers</a>
-                <br> <a href="#" title="Careers">Press Releases</a>
-                <br> <a href="#" title="Events">Beinex in the News</a>
+                <a href="#" title="About Beinex">About Beinex</a>
+                <a href="#" title="Careers">Careers</a>
+                <a href="#" title="Press">Press Releases</a>
+                <a href="#" title="News">Beinex in the News</a>
             </div>
             <div class="borderdiv">
-                <p>Our Services</p>
-                <a href="#" title="Training">Advanced Analytics</a>
-                <br> <a href="#" title="Blog">AI /ML/RPA</a>
-                <br> <a href="#" title="Careers">Alteryx APA</a>
-                <br> <a href="#" title="Events">Audit Analytics</a>
-                <br> <a href="#" title="Careers">Beinex Digital</a>
-                <br> <a href="#" title="Events">Business Intelligence</a>
+                <span>
+                    <p>Our Services</p>
+
+                    <a href="#" title="Analytics">Advanced Analytics</a>
+                    <a href="#" title="RPA">AI /ML/RPA</a>
+                    <a href="#" title="Alteryx">Alteryx APA</a>
+                    <a href="#" title="Audit">Audit Analytics</a>
+                    <a href="#" title="Digital">Beinex Digital</a>
+                    <a href="#" title="Business">Business Intelligence</a>
+                </span>
+                <span>
+                    <a href="#" title="Competitive">Competitive Intelligence</a>
+                    <a href="#" title="Cloud">Modern Cloud Analytics</a>
+                    <a href="#" title="Risk">Risk Analytics</a>
+                    <a href="#" title="Tableau">Tableau</a>
+                    <a href="#" title="Support">Tableau Support Services</a>
+                </span>
             </div>
-            <div>
-                <br> <a href="#" title="Training">Competitive Intelligence</a>
-                <br> <a href="#" title="Blog">Modern Cloud Analytics</a>
-                <br> <a href="#" title="Careers">Risk Analytics</a>
-                <br> <a href="#" title="Events">Tableau</a>
-                <br> <a href="#" title="Careers">Tableau Support Services</a>
+
+            <div class="borderdiv">
+                <span>
+                    <p>Our Industries</p>
+                    <a href="#" title="Finance">Finance</a>
+                    <a href="#" title="HR">Human Resources</a>
+                    <a href="#" title="Procurement">Procurement</a>
+                    <a href="#" title="Sales">Sales</a>
+                </span>
             </div>
             <div class="borderdiv">
-                <p>Our Industries</p>
-                <a href="#" title="Training">Finance</a>
-                <br> <a href="#" title="Blog">Human Resources</a>
-                <br> <a href="#" title="Careers">Procurement</a>
-                <br> <a href="#" title="Events">Sales</a>
+                <span>
+                    <p>Our Partners</p>
+                    <a href="#" title="Tableau">Tableau</a>
+                    <a href="#" title="Alteryx">Alteryx</a>
+                    <a href="#" title="AURAA">AURAA</a>
+                    <a href="#" title="Amazon">Amazon Web Services</a>
+                </span>
+                <span>
+                    <a href="#" title="Microsoft">Microsoft Azure</a>
+                    <a href="#" title="Snowflake">Snowflake</a>
+                    <a href="#" title="Salesforce">Salesforce</a>
+                    <a href="#" title="Alation">Alation</a>
+                </span>
             </div>
-            <div class="borderdiv">
-                <p>Our Partners</p>
-                <a href="#" title="Training">Tableau</a>
-                <br> <a href="#" title="Blog">Alteryx</a>
-                <br> <a href="#" title="Careers">AURAA</a>
-                <br> <a href="#" title="Events">Amazon Web Services</a>
-            </div>
-            <div>
-               <br> <a href="#" title="Training">Microsoft Azure</a>
-                <br> <a href="#" title="Blog">Snowflake</a>
-                <br> <a href="#" title="Careers">Salesforce</a>
-                <br> <a href="#" title="Events">Alation</a>
-            </div>
+
         </div>
 
         <div class="footerbase">
             <div class="baselinks">
-                <a href="#" title="Blog">Privacy Policy</a>
-                <a href="#" class="blink" title="Careers">Terms of Use</a>
-                <a href="#" class="blink" title="Events">Cookie Policy</a>
+                <a href="#" title="Privacy Policy">Privacy Policy</a>
+                <a href="#" class="blink" title="Terms of Use">Terms of Use</a>
+                <a href="#" class="blink" title="Cookie Policy">Cookie Policy</a>
             </div>
             <div class="smlinks">
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="linkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" title="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <p>Copyright @ 2022 - 23 Beinex</p>
         </div>

@@ -8,6 +8,12 @@
 }
 
 /* Header starts */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+}
 
 .navbar {
     width: 100%;
@@ -15,21 +21,20 @@
     padding-left: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navlink {
-    float: right;
     text-decoration: none;
     color: #10385c;
     font-size: 14px;
     margin-left: 20px;
 }
 
-.logo {
-    float: left;
-}
 
-.logo img {
+.logo>img {
     width: 150px;
     height: 29px;
 }
@@ -37,10 +42,6 @@
 /* Header ends */
 
 /* Section starts */
-
-section {
-    padding-top: 30px;
-}
 
 .heading {
     text-align: center;
@@ -66,24 +67,25 @@ section {
     background-size: 20%;
 }
 
-.textdiv h3 {
+.textdiv>h3 {
     font-size: 24px;
     padding-bottom: 15px;
 }
 
-.textdiv p {
+.textdiv>p {
     font-weight: 300;
     font-size: 13px
 }
 
 .viddiv {
     width: 35%;
-    height: 250px;
+    height: auto;
 }
 
 video {
-    float: right;
-    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 .comments {
@@ -107,7 +109,6 @@ video {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    /* background-color: #1fd4f6; */
     background-image: url('../images/quote.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -117,17 +118,17 @@ video {
     left: 20px;
 }
 
-.comdiv h3 {
+.comdiv>h3 {
     font-weight: 500;
     padding-bottom: 20px;
 }
 
-.comdiv p {
+.comdiv>p {
     font-size: 12px;
     opacity: 0.9;
 }
 
-.comdiv h4 {
+.comdiv>h4 {
     padding-top: 20px;
     color: black;
 }
@@ -153,29 +154,59 @@ h2 {
     font-weight: 600;
 }
 
-.demodiv form {
+.demodiv>form {
     padding-top: 30px;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .demodiv div {
     position: relative;
+    width: 50%;
+    padding-right: 20px;
 }
 
-.demodiv .lefticon {
-    position: absolute;
-    left: 41%;
-    top: 8px;
-    color: #1fd4f6;
-    font-size: 20px;
+.demodiv .textareadiv {
+    width: 100%;
 }
 
-.righticon {
+.demodiv div::after {
+    content: '\f007';
+    font-family: FontAwesome;
     position: absolute;
-    left: 89%;
-    top: 8px;
-    color: #1fd4f6;
-    font-size: 20px;
+    right: 35px;
+    top: 9px;
+    color: #2b98f7;
+}
+
+.demodiv div.email::after {
+    content: '\f0e0';
+}
+
+.demodiv div.country::after {
+    content: '\f57e';
+}
+
+.demodiv div.phone::after {
+    content: '\f095';
+}
+
+.demodiv div.company::after {
+    content: '\f1ad';
+}
+
+.demodiv div.job::after {
+    content: '\f508';
+}
+
+.demodiv div.textareadiv::after {
+    content: '\f075';
+}
+
+.demodiv div.subbut::after {
+    content: '';
 }
 
 button {
@@ -186,7 +217,7 @@ button {
 
 .demodiv input {
     border: 2px solid rgba(16, 56, 92, 0.2);
-    width: 45%;
+    width: 100%;
     padding: 5px;
     margin-right: 20px;
     margin-bottom: 15px;
@@ -195,7 +226,7 @@ button {
 
 .demodiv textarea {
     border: 2px solid rgba(16, 56, 92, 0.2);
-    width: 93%;
+    width: 100%;
     padding: 5px;
     margin-bottom: 15px;
 }
@@ -209,7 +240,7 @@ button {
 
 }
 
-.nextdiv p {
+.nextdiv>p {
     font-size: 14px;
     font-weight: 400;
     padding-top: 20px;
@@ -226,20 +257,23 @@ button {
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
-    /* text-align: center; */
-    background-color: #032d66;
+    background-image: linear-gradient(to right top, #23133f 10%, #032d66);
 }
 
-.linksdiv div {
+.linksdiv>div {
     text-align: left;
     padding-right: 30px;
-
 }
 
 .borderdiv {
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     padding-left: 30px;
-    /* margin-top: -10px; */
+    display: flex;
+    align-items: center;
+}
+
+.borderdiv>span {
+    margin-right: 20px;
 }
 
 .linksdiv p {
@@ -253,6 +287,8 @@ button {
     font-size: 13px;
     font-weight: 300;
     text-decoration: none;
+    display: block;
+    padding-bottom: 10px;
 }
 
 .footerbase {
@@ -265,7 +301,7 @@ button {
     text-align: center;
 }
 
-.baselinks a {
+.baselinks>a {
     text-decoration: none;
     font-size: 14px;
     color: white;
@@ -280,8 +316,8 @@ button {
     padding: 20px;
 }
 
-.smlinks a {
-    font-size: 14px;
+.smlinks>a {
+    font-size: 18px;
     color: white;
     padding: 0px 10px 0px 10px;
 }
@@ -291,33 +327,26 @@ button {
 /* Responsive */
 
 @media only screen and (max-width: 800px) {
-    .navbar{
+    .navbar {
         padding: 0;
     }
-    .navlink{
-        float: none;
+
+    .navlink {
         margin-left: 10px;
     }
-    section{
-        padding-top: 0;
-    }
+
     .secrow {
         display: block;
     }
 
     .textdiv {
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
 
     .viddiv {
-        width: 90%;
+        width: 80%;
         margin: auto;
-
-    }
-
-    video {
-        float: left;
-        margin-top: 0%;
     }
 
     .comments {
@@ -339,24 +368,25 @@ button {
         margin: auto;
     }
 
-    .demodiv .lefticon {
-        left: 39%;
-    }
-
-    .demodiv textarea {
-        width: 95%;
-    }
 
     .nextdiv {
         width: 100%;
     }
 
     .linksdiv {
-        display: block;
+        flex-wrap: wrap;
+    }
+
+    .borderdiv {
+        border: none;
+        margin: 0px;
+        padding: 0;
     }
 
     .linksdiv div {
         width: 40%;
         margin: auto;
+        padding: 0px;
+        margin: 0;
     }
 }
