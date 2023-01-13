@@ -8,6 +8,7 @@
     <title>Testimonial</title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/testimonial.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,34 +21,35 @@
 
 <body>
     <!-- Header starts -->
-    <header>
-        <div class="navbar">
-            <div>
-                <a class="logo" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
-            </div>
-            <div>
-                <a class="navlink" href="#" title="Services">Services</a>
-                <a class="navlink" href="#" title="Partners">Partners</a>
-                <a class="navlink" href="#" title="Industries">Industries</a>
-                <a class="navlink" href="#" title="Company">Company</a>
-                <a class="navlink" href="#" title="Events">Events</a>
-                <a class="navlink" href="#" title="Careers">Careers</a>
-                <a class="navlink" href="#" title="Blog">Blog</a>
-                <a class="navlink" href="#" title="Training">Training</a>
-            </div>
-        </div>
+    <header class="header-module">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+            <a class="logo" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+            <ul>
+                <li><a class="navlink" href="#" title="Services">Services</a></li>
+                <li><a class="navlink" href="#" title="Partners">Partners</a></li>
+                <li><a class="navlink" href="#" title="Industries">Industries</a></li>
+                <li><a class="navlink" href="#" title="Company">Company</a></li>
+                <li><a class="navlink" href="#" title="Events">Events</a></li>
+                <li><a class="navlink" href="#" title="Careers">Careers</a></li>
+                <li><a class="navlink" href="#" title="Blog">Blog</a></li>
+                <li><a class="navlink" href="#" title="Training">Training</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Header ends -->
 
     <!-- Section starts -->
-    <section>
-        <div class="heading">
+    <section class="heading-module">
+        <div class="container">
             <h3>Testimonials</h3>
         </div>
+    </section>
 
-        <div class="secrow">
-            <div class="textdiv"
-                style="background-image:linear-gradient(rgba(255,255,255, 0.9),rgba(255,255,255, 0.9)),url('./assets/images/quotebg.png');">
+    <section class="video-module">
+        <div class="container">
+            <div class="textdiv">
                 <h3>What Are Our Client Saying</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                     diam nonummy nibh euismod tincidunt ut laoreet dolore
@@ -60,10 +62,11 @@
                 </video>
             </div>
         </div>
+    </section>
 
-        <div class="comments">
+    <section class="comments-module">
+        <div class="container">
             <div class="comdiv">
-                <div class="circlediv"></div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero rem cum accusamus esse
                     temporibus. A quaerat doloremque aliquam voluptatum reprehenderit commodi quibusdam laudantium
@@ -74,7 +77,6 @@
                 <p class="des">Designation</p>
             </div>
             <div class="comdiv">
-                <div class="circlediv"></div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero rem cum accusamus esse
                     temporibus. A quaerat doloremque aliquam voluptatum reprehenderit commodi quibusdam laudantium
@@ -85,7 +87,6 @@
 
             </div>
             <div class="comdiv">
-                <div class="circlediv"></div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero rem cum accusamus esse
                     temporibus. A quaerat doloremque aliquam voluptatum reprehenderit commodi quibusdam laudantium
@@ -95,11 +96,7 @@
                 <p class="des">Designation</p>
 
             </div>
-        </div>
-
-        <div class="comments">
             <div class="comdiv">
-                <div class="circlediv"></div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero rem cum accusamus esse
                     temporibus. A quaerat doloremque aliquam voluptatum reprehenderit commodi quibusdam laudantium
@@ -110,7 +107,6 @@
                 <p class="des">Designation</p>
             </div>
             <div class="comdiv">
-                <div class="circlediv"></div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero rem cum accusamus esse
                     temporibus. A quaerat doloremque aliquam voluptatum reprehenderit commodi quibusdam laudantium
@@ -121,7 +117,6 @@
 
             </div>
             <div class="comdiv">
-                <div class="circlediv"></div>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero rem cum accusamus esse
                     temporibus. A quaerat doloremque aliquam voluptatum reprehenderit commodi quibusdam laudantium
@@ -132,34 +127,36 @@
 
             </div>
         </div>
+    </section>
 
-        <div class="lastrow">
+    <section class="form-module">
+        <div class="container">
             <div class="demodiv">
                 <h2>Request A Demo</h2>
                 <form action="">
                     <div class="name">
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" id="name">
                     </div>
                     <div class="email">
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" id="email">
                     </div>
                     <div class="country">
-                        <input type="text" placeholder="Select Country">
+                        <input type="text" placeholder="Select Country" id="country">
                     </div>
                     <div class="phone">
-                        <input type="text" placeholder="Phone number">
+                        <input type="text" placeholder="Phone number" id="phone">
                     </div>
                     <div class="company">
-                        <input type="text" placeholder="Company">
+                        <input type="text" placeholder="Company" id="company">
                     </div>
                     <div class="job">
-                        <input type="text" placeholder="Job role">
+                        <input type="text" placeholder="Job role" id="job">
                     </div>
                     <div class="textareadiv">
-                        <textarea name="" id="" cols="30" rows="3" placeholder="Message"></textarea>
+                        <textarea name="" id="message" cols="30" rows="3" placeholder="Message"></textarea>
                     </div>
                     <div class="textareadiv subbut">
-                        <button type="button">Submit <i class="fa-regular fa-circle-right"></i></button>
+                        <button type="button" onclick="validate()">Submit</button>
                     </div>
                 </form>
             </div>
@@ -170,64 +167,66 @@
             </div>
         </div>
     </section>
+
     <!-- Section ends -->
 
     <!-- Footer starts -->
-    <footer>
+    <footer class="footer-module">
         <div class="linksdiv">
-            <div>
-                <a href="./index.html"><img src="./assets/images/whitelogo.jpg" width="120px" height="29px"
-                        alt="logo"></a>
-                <a href="#" title="About Beinex">About Beinex</a>
-                <a href="#" title="Careers">Careers</a>
-                <a href="#" title="Press">Press Releases</a>
-                <a href="#" title="News">Beinex in the News</a>
-            </div>
-            <div class="borderdiv">
-                <span>
-                    <p>Our Services</p>
+            <div class="container footerlinks">
+                <div>
+                    <a href="./index.html"><img src="./assets/images/whitelogo.jpg" width="120px" height="29px"
+                            alt="logo"></a>
+                    <a href="#" title="About Beinex">About Beinex</a>
+                    <a href="#" title="Careers">Careers</a>
+                    <a href="#" title="Press">Press Releases</a>
+                    <a href="#" title="News">Beinex in the News</a>
+                </div>
+                <div class="borderdiv">
+                    <span>
+                        <p>Our Services</p>
 
-                    <a href="#" title="Analytics">Advanced Analytics</a>
-                    <a href="#" title="RPA">AI /ML/RPA</a>
-                    <a href="#" title="Alteryx">Alteryx APA</a>
-                    <a href="#" title="Audit">Audit Analytics</a>
-                    <a href="#" title="Digital">Beinex Digital</a>
-                    <a href="#" title="Business">Business Intelligence</a>
-                </span>
-                <span>
-                    <a href="#" title="Competitive">Competitive Intelligence</a>
-                    <a href="#" title="Cloud">Modern Cloud Analytics</a>
-                    <a href="#" title="Risk">Risk Analytics</a>
-                    <a href="#" title="Tableau">Tableau</a>
-                    <a href="#" title="Support">Tableau Support Services</a>
-                </span>
-            </div>
+                        <a href="#" title="Analytics">Advanced Analytics</a>
+                        <a href="#" title="RPA">AI /ML/RPA</a>
+                        <a href="#" title="Alteryx">Alteryx APA</a>
+                        <a href="#" title="Audit">Audit Analytics</a>
+                        <a href="#" title="Digital">Beinex Digital</a>
+                        <a href="#" title="Business">Business Intelligence</a>
+                    </span>
+                    <span>
+                        <a href="#" title="Competitive">Competitive Intelligence</a>
+                        <a href="#" title="Cloud">Modern Cloud Analytics</a>
+                        <a href="#" title="Risk">Risk Analytics</a>
+                        <a href="#" title="Tableau">Tableau</a>
+                        <a href="#" title="Support">Tableau Support Services</a>
+                    </span>
+                </div>
 
-            <div class="borderdiv">
-                <span>
-                    <p>Our Industries</p>
-                    <a href="#" title="Finance">Finance</a>
-                    <a href="#" title="HR">Human Resources</a>
-                    <a href="#" title="Procurement">Procurement</a>
-                    <a href="#" title="Sales">Sales</a>
-                </span>
+                <div class="borderdiv">
+                    <span>
+                        <p>Our Industries</p>
+                        <a href="#" title="Finance">Finance</a>
+                        <a href="#" title="HR">Human Resources</a>
+                        <a href="#" title="Procurement">Procurement</a>
+                        <a href="#" title="Sales">Sales</a>
+                    </span>
+                </div>
+                <div class="borderdiv">
+                    <span>
+                        <p>Our Partners</p>
+                        <a href="#" title="Tableau">Tableau</a>
+                        <a href="#" title="Alteryx">Alteryx</a>
+                        <a href="#" title="AURAA">AURAA</a>
+                        <a href="#" title="Amazon">Amazon Web Services</a>
+                    </span>
+                    <span>
+                        <a href="#" title="Microsoft">Microsoft Azure</a>
+                        <a href="#" title="Snowflake">Snowflake</a>
+                        <a href="#" title="Salesforce">Salesforce</a>
+                        <a href="#" title="Alation">Alation</a>
+                    </span>
+                </div>
             </div>
-            <div class="borderdiv">
-                <span>
-                    <p>Our Partners</p>
-                    <a href="#" title="Tableau">Tableau</a>
-                    <a href="#" title="Alteryx">Alteryx</a>
-                    <a href="#" title="AURAA">AURAA</a>
-                    <a href="#" title="Amazon">Amazon Web Services</a>
-                </span>
-                <span>
-                    <a href="#" title="Microsoft">Microsoft Azure</a>
-                    <a href="#" title="Snowflake">Snowflake</a>
-                    <a href="#" title="Salesforce">Salesforce</a>
-                    <a href="#" title="Alation">Alation</a>
-                </span>
-            </div>
-
         </div>
 
         <div class="footerbase">
