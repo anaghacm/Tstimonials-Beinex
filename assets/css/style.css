@@ -12,7 +12,7 @@
     position: sticky;
     top: 0;
     background-color: #fff;
-    z-index: 100;
+    z-index: 10;
     box-shadow: 0 0 10px #000;
 }
 
@@ -98,7 +98,7 @@ nav ul li a:hover::before {
 .textdiv {
     width: 50%;
     color: #10385c;
-    padding: 80px;
+    padding: 80px 65px;
     position: relative;
 }
 
@@ -416,6 +416,7 @@ button:hover::after {
 
 /* Responsive */
 
+/* Navbar responsive */
 @media (max-width:900px) {
     .checkbtn {
         display: block;
@@ -465,11 +466,17 @@ button:hover::after {
     }
 }
 
+/* Mobile phone */
 @media (max-width: 767px) {
 
     .textdiv {
         width: 100%;
         padding: 30px;
+    }
+
+    .textdiv::before {
+        left: 0;
+        top: 0;
     }
 
     .viddiv {
@@ -505,10 +512,16 @@ button:hover::after {
 
 }
 
+/* Tablet */
 @media (min-width:768px) and (max-width: 991px) {
 
     .textdiv {
         padding: 30px;
+    }
+
+    .textdiv::before {
+        left: 0;
+        top: 0;
     }
 
     .comdiv {
