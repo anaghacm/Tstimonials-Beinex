@@ -510,6 +510,9 @@ button:hover::after {
         padding: 0;
     }
 
+    .baselinks>a {
+        padding: 0 10px;
+    }
 }
 
 /* Tablet */
